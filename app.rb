@@ -20,6 +20,9 @@ class App < Sinatra::Base
     @number.times do
      @colleciton << @phrase
     end
+    @collection.each do |phrase|
+      "#{phrase}"
+    end
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
