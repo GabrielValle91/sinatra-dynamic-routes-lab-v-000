@@ -18,7 +18,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @collection = []
     @number.times do
-     @colleciton << @phrase
+     @collection << @phrase
     end
     @collection.collect do |phrase|
       "#{phrase}"
