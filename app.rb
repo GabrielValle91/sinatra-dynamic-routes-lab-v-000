@@ -20,7 +20,7 @@ class App < Sinatra::Base
     @number.times do
      @colleciton << @phrase
     end
-    @collection.each do |phrase|
+    @collection.collect do |phrase|
       "#{phrase}"
     end
   end
